@@ -1,4 +1,8 @@
 def int_to_roman(num):
+    if type(num) != int:
+        return None
+    if num < 0:
+        return None
     romans = []
     roman_type = ''
     match num // 1000:
